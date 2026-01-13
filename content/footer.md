@@ -7,12 +7,7 @@ params:
     target: 'https://github.com/foxihd/hugo-brewm'
 ---
 
-**Impressum**
 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-<br>
 
 <fieldset id=cookie-banner>
 <legend>Cookie Banner</legend>

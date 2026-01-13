@@ -15,7 +15,7 @@ defaultContentLanguageInSubdir = true
 ## Generate a robots.txt
 enableRobotsTXT = true
 ## Use sections for main menu
-# sectionPagesMenu = 'main'
+sectionPagesMenu = 'main'
 ## Files to ignore when building site
 ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
 
@@ -49,13 +49,13 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     ## Site description
     description = "A blog about modern data engineering and data analytics platforms, techniques, and implementations."
     ## Copyright notice on colophon
-    copyright = "Copyright 2025 © Author"
+    copyright = "Copyright 2025 © SQLArcher"
     ## Hide "powered by hugo" on colophon
     HideHugoCredit = true
     ## Enable extended metadata (social cards)
     extMeta = true
     ## Enable coffee metric
-    coffeeStat = true
+    coffeeStat = false
     ## Default social card image, recommended resolution: 1200 x 630px
     # images = "example.com/img/social-share.jpg"
     ## Do not block AI user agent for robot.txt

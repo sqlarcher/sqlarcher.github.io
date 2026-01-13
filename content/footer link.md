@@ -5,7 +5,7 @@ params:
     headless: true
 ---
 
-**Example Links**
+**Links**
 
 - [Example Link 1](#)
 - [Example Link 2](#)
