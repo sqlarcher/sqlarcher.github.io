@@ -9,7 +9,7 @@ enableGitInfo = false
 ## Convert all URLs to absolute URLs
 canonifyURLs = true
 ## Default language for content
-defaultContentLanguage = 'en'
+## defaultContentLanguage = 'en'
 ## Put default language in subdirectory
 defaultContentLanguageInSubdir = false
 ## Generate a robots.txt
