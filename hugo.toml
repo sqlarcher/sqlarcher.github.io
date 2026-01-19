@@ -5,13 +5,13 @@ title = 'SQLArcher'
 ## Use hugo-brewm theme
 theme = 'hugo-brewm'
 ## Enable Git information for pages, (e.g. lastMod date information)
-enableGitInfo = true
+enableGitInfo = false
 ## Convert all URLs to absolute URLs
 canonifyURLs = true
 ## Default language for content
 defaultContentLanguage = 'en'
 ## Put default language in subdirectory
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 ## Generate a robots.txt
 enableRobotsTXT = true
 ## Use sections for main menu
@@ -37,10 +37,9 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
 [taxonomies]
     category = 'categories'
     tag = 'tags'
-    # author = 'author'
-    # series = 'series'
-    # lenses = 'lenses'
-    # cameras = 'cameras'
+    author = 'author'
+    posts = 'posts'
+   # series = 'series'
 
 ## Site parameters
 [params]
@@ -72,28 +71,22 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
         ## Choose where to append analytics script: use 'head' to place within <head> tags, or 'body' to place before closing </body> tag.
         append = 'body'
 
-#    ## Author information
-#    [params.author]
-#        ## site author's name
-#        name = 'Author Name'
-#        ## Author's email
-#        email = 'email@example.com'
-#        ## Other method to customize author and co-authors information
-#        coauthor = [
-#            {name = "A.N. Other", bio = "Lorem ipsum dolor sit amet."}
-#        ]
+    ## Author information
+    [params.author]
+        ## site author's name
+        name = 'Author Name'
 
     ## Comments configuration
     [params.comments]
         ## Disable comments (disable fediverse comments)
-        disabled = false
+        disabled = true
         ## Comment platform selection, pending rule implementation
         # platform = 'giscus'
 
     ## Favicon configuration
     [params.favicon]
         # png = '/favicon-96x96.png'
-        # svg = '/favicon.svg'
+         svg = '/logolight.svg'
         # ico = '/favicon.ico'
         # apple = '/apple-touch-icon.png'
         # appTitle = 'App Title'
@@ -117,7 +110,7 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
         ## Disable taxonomy listing carousel
         disableListing = false
         ## Select taxonomy listing to be featured
-        # featuredListing = ['categories', 'series', 'author', 'cameras', 'lenses']
+        featuredListing = ['categories', 'posts']
         ## include section nodes in json
         includeSectionInJson = false
 
@@ -126,9 +119,9 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
         ## define `#logomark` `content` in CSS
         ## logoInlineCSS = false
         ## Light mode logo mark
-        logoMark = 'https://example.com/logoMark.svg'
+        ## logoMark = 'https://example.com/logoMark.svg'
         ## Dark mode logo mark
-        logoMarkDark = 'https://example.com/logoMarkDark.svg'
+        ## logoMarkDark = 'https://example.com/logoMarkDark.svg'
         ## Enable logo type
         logoType = true
 

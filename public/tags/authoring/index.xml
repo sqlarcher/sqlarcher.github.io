@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Authoring on SQLArcher</title><link>http://127.0.0.1:8080/tags/authoring/</link><description>Recent Posts in Authoring on SQLArcher</description><generator>Hugo 0.154.5</generator><language>en</language><lastBuildDate>Mon, 19 Jan 2026 12:55:01 +1300</lastBuildDate><atom:link href="http://127.0.0.1:8080/tags/authoring/index.xml" rel="self" type="application/rss+xml"/><item><title>Authoring Stage Taxonomy for Digital Garden</title><link>http://127.0.0.1:8080/menu/authoring-custom-taxonomy/</link><pubDate>Mon, 28 Jul 2025 00:00:00 +0000</pubDate><dc:creator>Author Name</dc:creator><guid>http://127.0.0.1:8080/menu/authoring-custom-taxonomy/</guid><description>&lt;p&gt;This theme supports custom taxonomy and growth stage indicators.
+By default &lt;code&gt;seedling&lt;/code&gt;, &lt;code&gt;budding&lt;/code&gt; and &lt;code&gt;evergreen&lt;/code&gt; will have predefined indicator.&lt;/p&gt;</description><content:encoded>&lt;p&gt;This theme supports custom taxonomy and growth stage indicators.
+By default &lt;code&gt;seedling&lt;/code&gt;, &lt;code&gt;budding&lt;/code&gt; and &lt;code&gt;evergreen&lt;/code&gt; will have predefined indicator.&lt;/p&gt;
+&lt;p&gt;But fist, it must be manually set up as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Register the taxonomy in your &lt;code&gt;config.toml&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;taxonomies&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;stage&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;stage&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="2"&gt;
+&lt;li&gt;Create taxonomy folder and it&amp;rsquo;s terms &lt;code&gt;_index.md&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;mysite/
+ ├── ...
+ ├── content/
+ │ └── stage/
+ │ ├─ seedling/
+ │ │ └─ _index.md
+ │ ├─ budding/
+ │ │ └─ _index.md
+ │ └─ evergreen/
+ │ └─ _index.md
+ └── ...
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start="3"&gt;
+&lt;li&gt;Within &lt;code&gt;_index.md&lt;/code&gt;, Set the stage &lt;code&gt;title&lt;/code&gt; and &lt;code&gt;translationKey&lt;/code&gt; if site is multilingual,
+you can also override custom &lt;code&gt;indicator&lt;/code&gt; or &lt;code&gt;emoji&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Stage of me being Godzilla&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;translationKey&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;godzilla&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;emoji&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;🦖&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c"&gt;# indicator: &amp;#39;https://example.com/indicator.svg&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="l"&gt;You can write the introduction or blah blah blah here&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
+&lt;li&gt;Add the stage parameter into your post &lt;code&gt;index.md&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;My Post&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;stage&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;seedling&amp;#39;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded><category>Authoring</category></item><item><title>Authoring Cover Images and Audio Articles</title><link>http://127.0.0.1:8080/menu/authoring-cover-images-and-audio-article/</link><pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate><dc:creator>Author Name</dc:creator><guid>http://127.0.0.1:8080/menu/authoring-cover-images-and-audio-article/</guid><description>A guide on adding cover images and audio articles</description><content:encoded>&lt;h2 id="adding-cover-images"&gt;Adding Cover Images&lt;/h2&gt;
+&lt;h3 id="assign-the-cover-images"&gt;Assign The Cover Images&lt;/h3&gt;
+&lt;p&gt;To add a cover image to your article, you have two options:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Front Matter Method&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can use either &lt;code&gt;cover&lt;/code&gt; or &lt;code&gt;images&lt;/code&gt; parameter for the images source.
+And &lt;code&gt;alt&lt;/code&gt;, &lt;code&gt;coverAlt&lt;/code&gt; or &lt;code&gt;imagesAlt&lt;/code&gt; parameter for alt text.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;My Article&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;images&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;images/my-cover.jpg&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;alt&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Description of the images&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="2"&gt;
+&lt;li&gt;Page Bundle Method&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a folder for your post&lt;/li&gt;
+&lt;li&gt;Name your image &lt;code&gt;cover.*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Place it in the same folder as your content&lt;/li&gt;
+&lt;li&gt;Set the alt text in your post frontmatter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="place-the-cover"&gt;Place The Cover&lt;/h3&gt;
+&lt;p&gt;You can place your featured images in various layout, anywhere on article content with &lt;code&gt;{{&amp;lt; figure &amp;gt;}}&lt;/code&gt; shortcode:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;{{&lt;/span&gt;&lt;span class="err"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nx"&gt;figure&lt;/span&gt; &lt;span class="nx"&gt;src&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;cover&amp;#34;&lt;/span&gt; &lt;span class="nx"&gt;caption&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;alt&amp;#34;&lt;/span&gt; &lt;span class="err"&gt;&amp;gt;&lt;/span&gt;&lt;span class="p"&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is freedom of authoring!&lt;/p&gt;
+
+ 
+
+ &lt;figure &gt;
+ &lt;input id="fig-aa6fcad996b490d0837251768181abf5-0" class="marginpar-ctrl" type="checkbox" aria-controls="the-fig-aa6fcad996b490d0837251768181abf5-0" hidden&gt;
+ &lt;label for="fig-aa6fcad996b490d0837251768181abf5-0"&gt;&lt;/label&gt;
+ &lt;span id="the-fig-aa6fcad996b490d0837251768181abf5-0" class="marginpar abs"&gt;
+ 
+ Cat named Cooper with styrofoam on his fur due to electrostatic charge.
+ 
+ &lt;/span&gt;
+ 
+ &lt;img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_and_styrofoam_%E2%80%93_electrostatic_charge_%28235112299%29.jpg"
+ alt="Cat named Cooper with styrofoam on his fur due to electrostatic charge."
+ title="Cat named Cooper with styrofoam on his fur due to electrostatic charge."aria-describedby="fig-aa6fcad996b490d0837251768181abf5-0"
+ loading="lazy"
+ &gt;
+ &lt;/figure&gt;
+&lt;h2 id="adding-audio-articles"&gt;Adding Audio Articles&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Front Matter Method&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;My Article&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;audio&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;audio/my-audio.ogg&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="2"&gt;
+&lt;li&gt;Page Bundle Method&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can upload multiple audio format with this method:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a folder for your post&lt;/li&gt;
+&lt;li&gt;Name your audio &lt;code&gt;audio.*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Place it in the same folder as your content&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="page-bundle-method-examples"&gt;Page Bundle Method Examples&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s how your folder structure should look:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;content/
+└── posts/
+ └── my-article/
+ ├── index.md
+ ├── cover.jpg
+ ├── audio.mp3
+ └── audio.ogg
+&lt;/code&gt;&lt;/pre&gt;</content:encoded><category>Authoring</category><enclosure url="https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_and_styrofoam_%E2%80%93_electrostatic_charge_%28235112299%29.jpg" length="0" type="image/jpeg"/></item><item><title>Authoring Terms Entry</title><link>http://127.0.0.1:8080/menu/authoring-terms-entry/</link><pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate><dc:creator>Author Name &amp; A.N. Other</dc:creator><guid>http://127.0.0.1:8080/menu/authoring-terms-entry/</guid><description>How to set the cover and linking of terms entry in Hugo Brewm theme</description><content:encoded>&lt;p&gt;You can change the cover of each terms entry by adding the &lt;code&gt;cover&lt;/code&gt; parameter in &lt;code&gt;_index.md&lt;/code&gt; under &lt;code&gt;[lang]\[taxonomies]\[terms]\&lt;/code&gt;.
+For example, to set the cover of the term &lt;code&gt;configuration&lt;/code&gt; in categories, add the parameter in &lt;code&gt;content\en\categories\configuration\_index.md&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Configuration&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;description&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Configuration description, this might be useful for HTML metadata&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;cover&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;https://example.com/cover.png&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;translationKey&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;configuration&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="l"&gt;If something is written here, the text will be displayed as hero section.&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To link the terms entry in another language, you can add the &lt;code&gt;translationKey&lt;/code&gt; parameter.
+For example, if you want to link the terms entry in Indonesian, add the parameter in &lt;code&gt;content\id\categories\konfigurasi\_index.md&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Konfigurasi&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;description&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;Deskripsi konfigurasi, ini bisa berguna untuk metadata HTML&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;cover&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;https://example.com/cover.png&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;translationKey&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;configuration&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nn"&gt;---&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="l"&gt;Jika ada teks yang ditulis di sini, teks akan ditampilkan sebagai bagian hero.&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The same way, you can set the cover of each terms entry for &lt;code&gt;series&lt;/code&gt; and &lt;code&gt;author&lt;/code&gt; taxonomies.
+After making these changes, rebuild your site to see the updated cover and translations in breadcrumbs.
+The cover will replace the flowlines images on taxonomies listing.&lt;/p&gt;</content:encoded><category>Authoring</category></item><item><title>Authoring The Redaction History</title><link>http://127.0.0.1:8080/menu/authoring-redaction-history/</link><pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate><dc:creator>Author Name</dc:creator><guid>http://127.0.0.1:8080/menu/authoring-redaction-history/</guid><description>How to set up the redaction history in Hugo Brewm theme</description><content:encoded>&lt;p&gt;The redaction history functionality enables you to track and communicate content modifications to readers.
+Within the post&amp;rsquo;s front matter, you can specify details such as &lt;code&gt;editor&lt;/code&gt;, &lt;code&gt;reviewer&lt;/code&gt;, and include explanatory notes (&lt;code&gt;note&lt;/code&gt;) about the changes made.
+This feature requires manual configuration in the post&amp;rsquo;s front matter section.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-toml" data-lang="toml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;+++&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;title&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Authoring The Redaction History&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nx"&gt;history&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;date&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;2025-02-01&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;author&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Author Name&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;reviewer&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Reviewer Name&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;note&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Example&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;date&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;2025-02-02&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;author&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Author Name&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;editor&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Editor Name&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;note&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Addendum (example)&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nx"&gt;date&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;2025-02-03&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;note&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;#34;Errata (example)&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="err"&gt;+++&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;A chronological timeline displaying these information will appear under the article&amp;rsquo;s information section, as demonstrated in this example post.&lt;/p&gt;</content:encoded><category>Authoring</category></item></channel></rss>

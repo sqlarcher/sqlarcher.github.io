@@ -1,0 +1,46 @@
+[[main]]
+  name       = 'Home'
+  identifier = 'home'
+  pageRef    = '/'
+  weight     = 1
+
+
+[[more]]
+  name       = 'About'
+  identifier = 'about'
+  pageRef    = '/'
+  weight     = 5
+
+  [[more]]
+  name       = 'Author'
+  identifier = 'author'
+  pageRef    = '/author'
+  parent     = 'about'
+  weight     = 1
+
+[[footer]]
+  identifier = 'LinkedIn'
+  url        = 'https://www.linkedin.com/in/stephanlawson/'
+  weight     = 1
+  name       = 'linkedin'
+  pre        = 'linkedin'
+
+[[footer]]
+  identifier = 'BlueSky'
+  url    = 'https://bsky.app/profile/sqlarcher.bsky.social'
+  weight     = 2
+  name       = 'bluesky'
+  pre        = 'bluesky'
+
+[[footer]]
+  identifier = 'X/Twitter'
+  url    = 'https://x.com/sqlarcher'
+  weight     = 3
+  name       = 'X/Twitter'
+  pre        = 'x'
+
+[[contrib]]
+  identifier = 'githubsponsors'
+  url        = 'https://github.com/sponsors/foxihd/'
+  name       = 'Become Github Sponsors'
+  pre        = 'githubsponsors'

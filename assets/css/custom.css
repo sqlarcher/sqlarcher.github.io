@@ -1,0 +1,86 @@
+:root {
+    /* default contrast */
+    --ac-light: #36c;
+    --fg-light: #111;
+    --bg-light: #f9f9fb;
+    --midtone: gray;
+    --fg-dark: #f9f9fb;
+    --bg-dark: #111;
+    --ac-dark: #fa0;
+
+    /* less contrast */
+    --ac-light-less: #36c;
+    --fg-light-less: #13253d;
+    --bg-light-less: #e7e2e2;
+    --midtone-less: #7d8490;
+    --fg-dark-less: #e7e2e2;
+    --bg-dark-less: #13253d;
+    --ac-dark-less: #fa0;
+
+    /* more contrast */
+    --ac-light-more: #36c;
+    --fg-light-more: #000;
+    --bg-light-more: #fff;
+    --midtone-more: gray;
+    --fg-dark-more: #fff;
+    --bg-dark-more: #000;
+    --ac-dark-more: #fa0;
+
+    /* mark & selector highlight color */
+    --hl: yellow;
+}
+
+/* Additional custom styles */
+
+
+body[data-contrast="less"] #background-header,
+body[data-contrast="less"] #background-footer,
+body[data-contrast="less"] #a11y,
+body[data-contrast="less"] #top-nav-screen,
+body[data-contrast="less"] .on-plank {
+    border: 1px solid #fff1;
+    box-shadow: 0 -1px 1pc #0002;
+    background: #fff1;
+    backdrop-filter: blur(9px);
+}
+
+body[data-contrast="less"] #background-body {
+    background-color: var(--bg);
+    background-image:
+        radial-gradient(at 50% 40%,var(--bg) 0,transparent 50%),
+        radial-gradient(at 68% 62%,var(--bg) 0,transparent 50%),
+        radial-gradient(at 62% 38%,hsla(226,96%,52%,.5) 0,transparent 50%),
+        radial-gradient(at 35% 70%,hsla(246,31%,58%,.5) 0,transparent 50%),
+        radial-gradient(at 90% 85%,hsla(343,77%,69%,.3) 0,transparent 50%);
+}
+
+body[data-contrast="less"] .screening {
+    background: unset;
+    backdrop-filter: var(--blur);
+}
+
+body[data-contrast="less"] #bionReadSwitch + label {
+    background: unset;
+    color: unset;
+}
+
+body[data-contrast="less"] #bionReadSwitch + label:active,
+body[data-contrast="less"] #bionReadSwitch + label:hover,
+body[data-contrast="less"] #bionReadSwitch:checked + label {
+    color: var(--ac);
+}
+
+@media (max-width: 640px) {
+    body[data-contrast="less"] #top-nav-screen {
+        outline: unset;
+        border: unset;
+    }
+
+    body[data-contrast="less"] #top-nav .on-plank {
+        outline: unset;
+        border: unset;
+        box-shadow: none;
+        background: none;
+        backdrop-filter: unset;
+    }
+}
