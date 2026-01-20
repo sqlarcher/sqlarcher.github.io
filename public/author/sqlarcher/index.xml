@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>SQLArcher</title><link>http://127.0.0.1:8080/author/sqlarcher/</link><description>Recent Posts on SQLArcher</description><generator>Hugo 0.154.5</generator><language>en</language><lastBuildDate>Mon, 19 Jan 2026 13:12:47 +1300</lastBuildDate><atom:link href="http://127.0.0.1:8080/author/sqlarcher/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>sqlarcher on SQLArcher</title><link>http://127.0.0.1:8080/author/sqlarcher/</link><description>Recent Posts in sqlarcher on SQLArcher</description><generator>Hugo 0.154.5</generator><language>en</language><lastBuildDate>Tue, 20 Jan 2026 13:31:46 +1300</lastBuildDate><atom:link href="http://127.0.0.1:8080/author/sqlarcher/index.xml" rel="self" type="application/rss+xml"/><item><title>Databricks SDP</title><link>http://127.0.0.1:8080/post/databricks-sdp/2026-01-20-sdp/</link><pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate><dc:creator>sqlarcher</dc:creator><guid>http://127.0.0.1:8080/post/databricks-sdp/2026-01-20-sdp/</guid><description>&lt;h1 id="some-heading-intro"&gt;Some Heading Intro&lt;/h1&gt;
+&lt;p&gt;blah blah&lt;/p&gt;
+&lt;h2 id="main-body"&gt;Main body&lt;/h2&gt;
+&lt;p&gt;blah blah&lt;/p&gt;
+&lt;div class="highlight copy"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df1&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dropna&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;blah blah&lt;/p&gt;
+&lt;p&gt;!(./content/post/dbx/sdp.png)&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+ &lt;input id="fig-443e3c93ceb257ec95efcf05865cf7d0-0" class="marginpar-ctrl" type="checkbox" aria-controls="the-fig-443e3c93ceb257ec95efcf05865cf7d0-0" hidden&gt;
+ &lt;label for="fig-443e3c93ceb257ec95efcf05865cf7d0-0"&gt;&lt;/label&gt;
+ &lt;span id="the-fig-443e3c93ceb257ec95efcf05865cf7d0-0" class="marginpar abs"&gt;
+ 
+ 
+ 
+ &lt;/span&gt;
+ 
+ &lt;img src="http://127.0.0.1:8080/content/post/dbx/sdp.png"aria-describedby="fig-443e3c93ceb257ec95efcf05865cf7d0-0"
+ loading="lazy"
+ &gt;
+ &lt;/figure&gt;
+
+&lt;/section&gt;&lt;/p&gt;</description><content:encoded>&lt;h1 id="some-heading-intro"&gt;Some Heading Intro&lt;/h1&gt;
+&lt;p&gt;blah blah&lt;/p&gt;
+&lt;h2 id="main-body"&gt;Main body&lt;/h2&gt;
+&lt;p&gt;blah blah&lt;/p&gt;
+&lt;div class="highlight copy"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;df1&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dropna&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;blah blah&lt;/p&gt;
+&lt;p&gt;!(./content/post/dbx/sdp.png)&lt;/p&gt;
+&lt;p&gt;
+&lt;figure &gt;
+ &lt;input id="fig-443e3c93ceb257ec95efcf05865cf7d0-0" class="marginpar-ctrl" type="checkbox" aria-controls="the-fig-443e3c93ceb257ec95efcf05865cf7d0-0" hidden&gt;
+ &lt;label for="fig-443e3c93ceb257ec95efcf05865cf7d0-0"&gt;&lt;/label&gt;
+ &lt;span id="the-fig-443e3c93ceb257ec95efcf05865cf7d0-0" class="marginpar abs"&gt;
+ 
+ 
+ 
+ &lt;/span&gt;
+ 
+ &lt;img src="http://127.0.0.1:8080/content/post/dbx/sdp.png"aria-describedby="fig-443e3c93ceb257ec95efcf05865cf7d0-0"
+ loading="lazy"
+ &gt;
+ &lt;/figure&gt;
+
+&lt;/section&gt;&lt;/p&gt;</content:encoded><category>Databricks</category><enclosure url="/content/post/dbx/sdp.png" length="0" type="image/jpeg"/></item></channel></rss>

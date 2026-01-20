@@ -5,7 +5,7 @@ title = 'SQLArcher'
 ## Use hugo-brewm theme
 theme = 'hugo-brewm'
 ## Enable Git information for pages, (e.g. lastMod date information)
-enableGitInfo = false
+enableGitInfo = true
 ## Convert all URLs to absolute URLs
 canonifyURLs = true
 ## Default language for content
@@ -38,7 +38,8 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     category = 'categories'
     tag = 'tags'
     author = 'author'
-    posts = 'posts'
+    stage = 'stage'
+   # posts = 'posts'
    # series = 'series'
 
 ## Site parameters
@@ -52,9 +53,9 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     ## Hide "powered by hugo" on colophon
     HideHugoCredit = true
     ## Enable extended metadata (social cards)
-    extMeta = true
+    extMeta = false
     ## Enable coffee metric
-    coffeeStat = false
+    coffeeStat = true
     ## Default social card image, recommended resolution: 1200 x 630px
     # images = "example.com/img/social-share.jpg"
     ## Do not block AI user agent for robot.txt
@@ -74,7 +75,7 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     ## Author information
     [params.author]
         ## site author's name
-        name = 'Author Name'
+        name = 'SQLArcher'
 
     ## Comments configuration
     [params.comments]
@@ -86,10 +87,10 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     ## Favicon configuration
     [params.favicon]
         # png = '/favicon-96x96.png'
-         svg = '/logolight.svg'
+        svg = '/logolight.svg'
         # ico = '/favicon.ico'
         # apple = '/apple-touch-icon.png'
-        # appTitle = 'App Title'
+        appTitle = 'SQLArcher Blog'
         # webmanifest = '/site.webmanifest'
 
     ## Feed display settings
@@ -163,7 +164,7 @@ ignoreFiles = [ '\.redacted', '\.old','\.bak', '\.tmp', '\.swp', '\.DS_Store']
     ## Extended Metadata and Social card configuration
     [params.socialCard]
         ## Enable twitter and opengraph social cards (same as .Params.extMeta)
-        enable = true
+        enable = false
         ## Default social card image, same as .Params.images
         # images = "img/social-share.jpg"
         ## Enable Twitter cards

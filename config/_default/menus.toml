@@ -4,12 +4,11 @@
   pageRef    = '/'
   weight     = 1
 
-
 [[more]]
   name       = 'About'
   identifier = 'about'
   pageRef    = '/'
-  weight     = 5
+  weight     = 1
 
   [[more]]
   name       = 'Author'
@@ -39,8 +38,8 @@
   name       = 'X/Twitter'
   pre        = 'x'
 
-[[contrib]]
-  identifier = 'githubsponsors'
-  url        = 'https://github.com/sponsors/foxihd/'
-  name       = 'Become Github Sponsors'
-  pre        = 'githubsponsors'
+# [[contrib]]
+#   identifier = 'githubsponsors'
+#   url        = 'https://github.com/sponsors/foxihd/'
+#   name       = 'Become Github Sponsors'
+#   pre        = 'githubsponsors'

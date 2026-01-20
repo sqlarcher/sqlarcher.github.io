@@ -8,6 +8,6 @@ params:
     target: 'https://github.com/sqlarcher'
 ---
 
-**Under Maintenance**
+## Under Maintenance
 
 I am in the progress of moving my site from Wordpress to Github. Visit again soon for content.
